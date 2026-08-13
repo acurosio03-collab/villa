@@ -127,8 +127,8 @@ const villas=[
 const experiences=[
 ["Private Floating Breakfast","Start your morning in complete serenity.","breakfast.jpg"],
 ["Sunset Dinner","A private dining experience overlooking the ocean.","sunset-dinner.jpg"],
-["Balinese Wellness","Traditional treatments designed for complete relaxation.","assets/wellness.jpg"],
-["Island Adventure","Curated experiences around Bali.","assets/adventure.jpg"]
+["Balinese Wellness","Traditional treatments designed for complete relaxation.","wellness.jpg"],
+["Island Adventure","Curated experiences around Bali.","adventure.jpg"]
 ];
 function rupiah(n){return "Rp "+n.toLocaleString("id-ID")}
 function villaCard(v){return `<article class="villa-card"><button class="heart" onclick="event.stopPropagation();toast('Added to saved stays')">♡</button><div class="villa-img" style="background-image:url('${v.img}')"></div><div class="villa-body" onclick="go('detail')"><div class="villa-top"><div><div class="villa-name">${v.name}</div><div class="villa-meta">${v.loc} · ${v.rooms} Bedrooms · ${v.view}</div></div><span class="gold">★ ${v.rating}</span></div><div class="price"><b>${rupiah(v.price)}</b> / night</div></div></article>`}
